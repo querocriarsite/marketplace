@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/marketplace?style=plastic)</a>
 
 ## Available Scripts
 

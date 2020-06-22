@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import GlobalStyles from "./styles/GlobalStyles";
+import {Grid} from "./Styles"
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Grid>
+        <GlobalStyles/>
 
-    </div>
+
+    </Grid>
   );
 }
 

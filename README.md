@@ -1,4 +1,4 @@
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/marketplace?style=plastic)</a>
+<a href="./LICENSE.md">![GitHub](https://img.shields.io/github/license/querocriarsite/marketplace?style=plastic)</a>
 
 ## Available Scripts
 

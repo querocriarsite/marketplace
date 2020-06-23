@@ -1,14 +1,19 @@
 import React from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 import {connect} from "react-redux";
+import {BrowserRouter} from "react-router-dom";
 import {Grid} from "./Styles"
 
-const App = () => {
+const Page = () => {
     return (
-        <Grid>
+        <>
             <GlobalStyles/>
-            <h1>Olaaaaa</h1>
-        </Grid>
+            <BrowserRouter>
+                <Grid>
+                    <h1>Olaaaaa</h1>
+                </Grid>
+            </BrowserRouter>
+        </>
     );
 }
 
@@ -22,4 +27,4 @@ const mapDispatchToProps = (dispatch) => {
     return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Page);

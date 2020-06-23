@@ -1,5 +1,3 @@
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/marketplace?style=plastic)</a>
-
 ## Available Scripts
 
 In the project directory, you can run:

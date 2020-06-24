@@ -1,9 +1,9 @@
 import React from "react";
 
-const Page = ()=>{
+const Home = ()=>{
   return (
       <div>Página Inicial</div>
   );
 };
 
-export default Page;
+export default Home;

@@ -11,12 +11,17 @@ export default createGlobalStyle`
         outline: none;
         -webkit-font-smoothing: antialiased!important;
         font-family: 'Montserrat', sans-serif;
+        color: var(--black);
     }
 
     :root {
         --white: #fff;
-        --black: #222;
+        --black: #555;
         --bgColor: #f4f5fa;
+        --blue: #316faf;
+        --gray: #54575a;
+        --bgError: #ffcaca;
+        --red: #f00;
     }
     
     html, body, #root {

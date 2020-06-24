@@ -10,6 +10,7 @@ export const HeaderArea = styled.div`
         height: 100%;
         display: flex;
         margin: auto;
+        padding: 0 20px;
     }
     
     .logo {
@@ -17,8 +18,43 @@ export const HeaderArea = styled.div`
         display: flex;
         align-items: center;
     }
+    
+    nav {
+        display: flex;
+        padding: 10px 0;
+    
+        ul {
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+        
+        li {
+            margin-left: 30px;
+        }
+        
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--black);       
+            
+            &:hover {
+                color: var(--blue);
+            }        
+            
+            &.button {
+                white-space: nowrap;
+                background-color: var(--blue);
+                color: var(--white);
+                border-radius: 4px;
+                padding: 10px;
+                transition: background-color .3s;  
+                
+                &:hover {
+                    background-color: var(--gray);
+                }
+            }
+        }    
+    }
 `;
 
-export const Link = styled.a`
-
-`;

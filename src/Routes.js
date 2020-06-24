@@ -2,8 +2,10 @@ import React from "react";
 import {Switch, Route} from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
+import NotFound from "./pages/notFound";
+import SignIn from "./pages/signIn";
 
-const Routes = () => {
+export default () => {
     return (
         <Switch>
 
@@ -11,20 +13,18 @@ const Routes = () => {
                 <Home/>
             </Route>
 
-            <Route path="/sobre">
+            <Route exact path="/about">
                 <About/>
             </Route>
 
-            <Route path="*">
-                <h4 style={{
-                    padding: '30px 0',
-                    background: '#ffa456',
-                    height: '70vh'
-                }}>Página Não Encontrada</h4>
+            <Route exact path="/signin">
+                <SignIn/>
+            </Route>
+
+            <Route>
+                <NotFound/>
             </Route>
 
         </Switch>
     );
 };
-
-export default Routes;

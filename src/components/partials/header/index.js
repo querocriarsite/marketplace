@@ -1,8 +1,12 @@
 import React from "react";
 import Logo from "../../../assets/logo.svg";
-import {HeaderArea, Link} from "./styles";
+import {HeaderArea} from "./styles";
+import {Link} from "react-router-dom";
+import {isLogged} from "../../../helpers/authHandler";
 
 const Header = () => {
+    const logged = isLogged();
+
     return (
         <HeaderArea>
             <div className="container">
@@ -14,12 +18,36 @@ const Header = () => {
 
                 <nav>
                     <ul>
-                        <li>
-                            <Link to="">Login</Link>
-                        </li>
-                        <li>
-                            <Link to="">Cadastrar</Link>
-                        </li>
+                        {logged &&
+                        <>
+                            <li>
+                                <Link to="/my-acount">Minha Conta</Link>
+                            </li>
+                            <li>
+                                <Link to="/logout">Sair</Link>
+                            </li>
+                            <li>
+                                <Link to="/post-an-ad" className="button">
+                                    Publique um Anúncio
+                                </Link>
+                            </li>
+                        </>
+                        }
+                        {!logged &&
+                        <>
+                            <li>
+                                <Link to="/signin">Login</Link>
+                            </li>
+                            <li>
+                                <Link to="/signup">Cadastrar</Link>
+                            </li>
+                            <li>
+                                <Link to="/signin" className="button">
+                                    Publique um Anúncio
+                                </Link>
+                            </li>
+                        </>
+                        }
                     </ul>
                 </nav>
             </div>

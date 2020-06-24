@@ -1,11 +1,22 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
-    display: grid;
-    grid-template-areas: 
-    'SL SN CI CI'
-    'SL CL CD UL'
-    'SL UI CD UL';
-    grid-template-columns: 71px 240px auto 240px;
-    grid-template-rows: 46px auto 52px;
+export const Template = styled.div`
+   
 `;
+
+export const PageContainer = styled.div`
+
+`;
+
+export const PageTitle = styled.div`
+
+`;
+
+export const PageBody = styled.div`
+
+`;
+
+
+
+
+

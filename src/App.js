@@ -2,16 +2,24 @@ import React from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 import {connect} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
-import {Grid} from "./Styles"
+import Routes from "./Routes";
+import {Template} from "./Styles";
+import Header from "./components/partials/header";
+import Footer from "./components/partials/footer";
 
-const Page = () => {
+const Page = (props) => {
     return (
         <>
             <GlobalStyles/>
+
             <BrowserRouter>
-                <Grid>
-                    <h1>Olaaaaa</h1>
-                </Grid>
+                <Template>
+                    <Header/>
+
+                    <Routes/>
+
+                    <Footer/>
+                </Template>
             </BrowserRouter>
         </>
     );

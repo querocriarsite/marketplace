@@ -16,10 +16,13 @@ export default createGlobalStyle`
 
     :root {
         --white: #fff;
-        --black: #555;
         --bgColor: #f4f5fa;
-        --blue: #316faf;
+        --black: #333;
         --gray: #54575a;
+        --darkGray: #ccc;
+        --lightGray: #ddd;
+        --blue: #316faf;
+        --lightBlue: #49aeef;
         --bgError: #ffcaca;
         --red: #f00;
     }
@@ -35,6 +38,7 @@ export default createGlobalStyle`
     }
 
     button, a {
+        background: none;
         cursor: pointer;
     }
 

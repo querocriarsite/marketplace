@@ -33,7 +33,7 @@ export const HeaderArea = styled.div`
             margin-left: 30px;
         }
         
-        a {
+        a, button {
             font-size: 16px;
             font-weight: 600;
             color: var(--black);       
@@ -46,7 +46,7 @@ export const HeaderArea = styled.div`
                 white-space: nowrap;
                 background-color: var(--blue);
                 color: var(--white);
-                border-radius: 4px;
+                border-radius: 5px;
                 padding: 10px;
                 transition: background-color .3s;  
                 

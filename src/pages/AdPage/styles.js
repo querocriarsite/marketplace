@@ -50,7 +50,7 @@ export const PageArea = styled.div`
                 }
                 
                 button {
-                    background-color: var(--gray);
+                    background-color: var(--black);
                     padding: 5px 10px;
                     border-radius: 4px;
                     color: var(--white);
@@ -58,7 +58,7 @@ export const PageArea = styled.div`
                     transition: background-color .3s;
                 
                     &:hover {
-                        background-color: var(--blue);
+                        background-color: var(--gray);
                     }
                 }
             }  

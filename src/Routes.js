@@ -1,9 +1,11 @@
 import React from "react";
 import {Switch, Route} from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
-import NotFound from "./pages/notFound";
-import SignIn from "./pages/signIn";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import AdPage from "./pages/AdPage";
 
 export default () => {
     return (
@@ -19,6 +21,14 @@ export default () => {
 
             <Route exact path="/signin">
                 <SignIn/>
+            </Route>
+
+            <Route exact path="/signup">
+                <SignUp/>
+            </Route>
+
+            <Route exact path="/ad/:id">
+                <AdPage/>
             </Route>
 
             <Route>

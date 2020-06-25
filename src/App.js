@@ -4,8 +4,8 @@ import {connect} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 import Routes from "./Routes";
 import {Template} from "./Styles";
-import Header from "./components/partials/header";
-import Footer from "./components/partials/footer";
+import Header from "./components/partials/Header";
+import Footer from "./components/partials/Footer";
 
 const Page = (props) => {
     return (

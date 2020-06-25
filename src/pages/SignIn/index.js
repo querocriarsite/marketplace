@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {PageArea} from "./styles";
 import {PageContainer, PageTitle, ErrorMessage} from "../../Styles";
 import useApi from "../../helpers/MarketplaceAPI";
-import {doLogin} from "../../helpers/authHandler";
+import {doLogin} from "../../helpers/AuthHandler";
 
 const SignIn = () => {
     const api = useApi();
@@ -16,6 +16,7 @@ const SignIn = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setDisabled(true);
+        setError('');
 
         const json = await api.login(email, password);
 
@@ -25,6 +26,8 @@ const SignIn = () => {
             doLogin(json.token, rememberPassword);
             window.location.href = '/';
         }
+
+        setDisabled(false);
     };
 
     return (
@@ -65,7 +68,7 @@ const SignIn = () => {
                             <input type="checkbox"
                                    disabled={disabled}
                                    checked={rememberPassword}
-                                   onClick={() => setRememberPassword(!rememberPassword)}
+                                   onChange={() => setRememberPassword(!rememberPassword)}
                             />
                             Lembrar Senha
                         </label>

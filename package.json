@@ -14,10 +14,12 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-slideshow-image": "^1.5.3",
+    "react-text-mask": "^5.4.3",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.1.1",
-    "styled-icons": "^10.2.1"
+    "styled-icons": "^10.2.1",
+    "text-mask-addons": "^3.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

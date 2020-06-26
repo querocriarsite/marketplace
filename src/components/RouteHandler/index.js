@@ -1,12 +1,17 @@
 import React from "react";
-import {Route} from "react-router-dom";
+import {Route, Redirect} from "react-router-dom";
+import {isLogged} from "../../helpers/AuthHandler";
 
 export default ({children, ...rest}) => {
+    const logged = isLogged();
+    const authorized = (!(rest.private && !logged));
 
     return (
         <Route
             {...rest}
-            render={()=>children}
+            render={() =>
+                authorized ? children : <Redirect to="/signin"/>
+            }
         />
     );
 };

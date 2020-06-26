@@ -1,67 +1,146 @@
 import styled from "styled-components";
+import {KeyboardArrowRight, Home} from "styled-icons/material";
+
+export const Fake = styled.div`
+    background-color: var(--lightGray);
+    height: ${props => props.height || 20}px;
+`;
 
 export const PageArea = styled.div`
-    form {
-        background-color: var(--white);
-        border-radius: 3px;
-        padding: 10px;
-        box-shadow: 0 0 3px #999;
+    display: flex;
+    margin-top: 20px;
     
-        .area {
+    .box {
+        background-color: var(--white);
+        border-radius: 5px;
+        box-shadow: 0 0 9px -3px #54575a4d;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .box-p {
+        padding: 10px;
+    }
+    
+    .leftSide {
+        flex: 1;
+        margin-right: 20px;
+        
+        .box {
             display: flex;
-            align-items: center;
-            padding: 10px;
-            max-width: 500px;
+        }
+        
+        .adImage {
+            width: 320px;
+            height: 320px;
+            margin-right: 20px;
             
-            .area-title {
-                width: 200px;
-                text-align: right;
-                padding-right: 20px;
-                font-weight: 700;
-                font-size: 14px;
+            .each-slide img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: cover;
+                height: 320px;
+            }
+        }
+        
+        .adInf {
+            flex: 1;
+            padding: 20px 20px 20px 0;
+                           
+            .adName {
+                margin-bottom: 20px;
+                
+                small {
+                    color: var(--dGray);
+                }
             }
             
-            .area-input {
-                flex: 1;
-                
-                &.remember {
-                    display: flex;
-                    align-items: center;
-                    font-size: 13px;
+            .adDescription {
+                small {
+                    color: var(--dGray);
                 }
                 
-                input {
-                    width: 100%;
-                    font-size: 14px;
-                    padding: 5px;
-                    border: 1px solid #ddd;
-                    border-radius: 3px;
-                    transition: border-color .4s ease;
-                    
-                    &[type=checkbox] {
-                        width: min-content;
-                        margin-right: 5px;
-                    }
-                    
-                    &:focus {
-                        border-color: var(--black);
-                        color: var(--black);
-                    }
+                hr {
+                    border: none;
+                    background-color: var(--dGray);
+                    height: 1px;
+                    margin: 10px 0 0 0;
                 }
-                
-                button {
-                    background-color: var(--black);
-                    padding: 5px 10px;
-                    border-radius: 4px;
-                    color: var(--white);
-                    font-size: 15px;
-                    transition: background-color .3s;
-                
-                    &:hover {
-                        background-color: var(--gray);
-                    }
-                }
-            }  
+            }
         }
+    }
+    
+    .rightSide {
+        width: 250px;
+        
+        .price span {
+            color: var(--green);
+            display: block;
+            font-size: 27px;
+            font-weight: 600;
+        }
+        
+        .contactSellerLink {
+            background-color: var(--blue);
+            color: var(--white);
+            padding: 12px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 9px -3px #54575a4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .createdBy small {
+            display: block;
+            color: var(--dGray);
+            margin-top: 10px;
+        }
+        
+        .createdBy strong {
+            color: var(--gray);
+            text-transform: capitalize;
+            display: block;
+        }
+    }
+`;
+
+export const OthersArea = styled.div`
+    h2 {
+        font-size: 20px;
+    }
+    
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .aditem {
+            width: 25%;
+        }
+    }
+`;
+
+export const RightArrow = styled(KeyboardArrowRight)`
+    width: 16px;
+    height: 16px;
+    fill: var(--blue);
+`;
+
+export const HomePag = styled(Home)`
+    width: 16px;
+    height: 16px;
+    fill: var(--lightBlue);
+`;
+
+export const BreadChumb = styled.div`
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue);
+    
+    a {
+        color: var(--lightBlue);
     }
 `;

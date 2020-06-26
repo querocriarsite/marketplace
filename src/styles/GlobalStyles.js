@@ -20,11 +20,13 @@ export default createGlobalStyle`
         --black: #333;
         --gray: #54575a;
         --darkGray: #ccc;
+        --dGray: #aaa;
         --lightGray: #ddd;
         --blue: #316faf;
         --lightBlue: #49aeef;
         --bgError: #ffcaca;
         --red: #f00;
+        --green: #00b327;
     }
     
     html, body, #root {

@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const SearchArea = styled.div`
-    background-color: var(--lightGray);
+    background-color: var(--lightBlue);
     border-bottom: 1px solid var(--darkGray);
-    padding: 20px 0;
+    padding: 20px 20px;
     
     .searchBox {
         display: flex;
         background-color: var(--lightBlue);
         padding: 20px 15px;
         border-radius: 5px;
-        box-shadow: 1px 1px 1px .3px rgba(0, 0, 0, 0.2);
         
         form {
             flex: 1;
@@ -54,12 +53,12 @@ export const SearchArea = styled.div`
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 20px;
+        padding: 0 15px;
         
         .categoryItem {
             //width: 25%;
             display: flex;
             align-items: center;
-            color: var(--black);
             height: 50px;
             margin-bottom: 10px;
             
@@ -85,11 +84,13 @@ export const PageArea = styled.div`
     h2 {
         font-size: 23px;
         font-weight: 600;
+        margin: 10px 20px;
     }
     
     .list {
         display: flex;
         flex-wrap: wrap;
+        padding: 0 10px;
         
         .aditem {
             width: 25%;

@@ -83,16 +83,6 @@ const Home = () => {
                     </div>
                     <Link className="seeAllLink" to="/ads">Ver Todos</Link>
 
-                    <hr/>
-
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad aliquam asperiores at aut consequatur excepturi facilis
-                    ipsa laborum maiores nemo odio placeat praesentium, quas,
-                    quasi quisquam suscipit ullam unde veritatis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad aliquam asperiores at aut consequatur excepturi facilis
-                    ipsa laborum maiores nemo odio placeat praesentium, quas,
-                    quasi quisquam suscipit ullam unde veritatis.
                 </PageArea>
             </PageContainer>
         </>

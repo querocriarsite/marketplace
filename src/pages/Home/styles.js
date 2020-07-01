@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const SearchArea = styled.div`
     background-color: var(--lightBlue);
-    border-bottom: 1px solid var(--darkGray);
-    padding: 20px 20px;
+    padding: 20px 0;
     
     .searchBox {
         display: flex;
         background-color: var(--lightBlue);
-        padding: 20px 15px;
+        padding: 20px;
         border-radius: 5px;
         
         form {
@@ -53,28 +52,38 @@ export const SearchArea = styled.div`
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 20px;
-        padding: 0 15px;
+        padding: 0 20px;
         
         .categoryItem {
-            //width: 25%;
+            flex-direction: column;
+            justify-content: center;
             display: flex;
             align-items: center;
             height: 50px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             
             span {
                 font-size: 20px;
-                transition: color .3s;
+                color: var(--white);
+                transition: color .2s;
                 
                 &:hover {
-                    color: var(--blue);
+                    color: var(--black);
                 }
             }  
             
             img {
                 width: 45px;
                 height: 45px;
-                margin-right: 10px;
+                margin-bottom: 5px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                transition: border .2s, transform .3s;
+                
+                &:hover {
+                    border-color: var(--black);
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -84,7 +93,16 @@ export const PageArea = styled.div`
     h2 {
         font-size: 23px;
         font-weight: 600;
-        margin: 10px 20px;
+        margin: 30px 20px 10px 20px;
+        width: fit-content;
+        
+        &:after {
+            content: '';
+            display: block;
+            height: 4px;
+            background: var(--blue);
+            border-radius: 10px;
+        }
     }
     
     .list {
@@ -94,6 +112,8 @@ export const PageArea = styled.div`
         
         .aditem {
             width: 25%;
+            min-width: 250px;
+            flex: auto;
         }
     }
     

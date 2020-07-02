@@ -10,6 +10,17 @@ export const PageArea = styled.div`
     display: flex;
     margin-top: 20px;
     
+    [data-area] {
+        background-color: var(--blue);
+        color: var(--white);
+        border-radius: 4px;
+        padding: 5px 10px;
+        
+        &:hover {
+            background-color: var(--lightBlue);
+        }
+    }
+    
     .box {
         background-color: var(--white);
         border-radius: 5px;
@@ -35,11 +46,22 @@ export const PageArea = styled.div`
         .adImage {
             width: 740px;
             height: 500px;
+            
+            .alice-carousel__dots {
+                margin-top: -25px;
+                position: absolute;
+                width: 100%;
+            }
+            
+            .alice-carousel__stage-item {
+                text-align: center;
+            }
         }
         
         .adInf {
             flex: 1;
             padding: 20px 0;
+            margin-top: 30px;            
                            
             .adName {
                 margin-bottom: 20px;

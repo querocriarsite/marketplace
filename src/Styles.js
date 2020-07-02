@@ -7,6 +7,7 @@ export const Template = styled.div`
 export const PageContainer = styled.div`
     max-width: 1200px;
     margin: auto;
+    padding: 0 20px 0 20px;
 `;
 
 export const PageTitle = styled.h1`

@@ -7,7 +7,7 @@ export const SearchArea = styled.div`
     .searchBox {
         display: flex;
         background-color: var(--lightBlue);
-        padding: 20px;
+        padding: 20px 5px 10px 5px;
         border-radius: 5px;
         
         form {
@@ -52,7 +52,7 @@ export const SearchArea = styled.div`
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 20px;
-        padding: 0 20px;
+        padding: 20px 5px 0 5px;
         
         .categoryItem {
             flex-direction: column;
@@ -109,7 +109,7 @@ export const SearchArea = styled.div`
                 min-width: 140px;
                 flex-direction: row;
                 justify-content: flex-start;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 
                 img {
                     margin-right: 10px;
@@ -131,7 +131,7 @@ export const PageArea = styled.div`
     h2 {
         font-size: 23px;
         font-weight: 600;
-        margin: 30px 20px 10px 20px;
+        margin: 30px 10px 10px 10px;
         width: fit-content;
         
         &:after {
@@ -140,13 +140,13 @@ export const PageArea = styled.div`
             height: 4px;
             background: var(--blue);
             border-radius: 10px;
+            width: 60%;
         }
     }
     
     .list {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 10px;
         
         .aditem {
             width: 25%;

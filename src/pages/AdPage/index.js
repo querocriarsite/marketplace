@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {useParams, Link} from "react-router-dom";
-import {Slide} from "react-slideshow-image";
+// ================ Plugin de slide ================ //
+import "react-alice-carousel/lib/alice-carousel.css";
+import Slideshow from 'react-alice-carousel';
+// ================================================= //
 import {
     PageArea,
     Fake,
@@ -60,13 +63,17 @@ const AdPage = () => {
                         <div className="adImage">
                             {loading && <Fake height={300}/>}
                             {adInfo.images &&
-                            <Slide>
+                            <Slideshow
+                                autoPlayInterval={5000}
+                                autoPlay={true}
+                                fadeOutAnimation={true}
+                                duration={400}
+                            >
                                 {adInfo.images.map((img, k) =>
-                                    <div key={k} className="each-slide">
-                                        <img src={img} alt=""/>
-                                    </div>
+                                    <img key={k} src={img} alt=""
+                                         className="yours-custom-class"/>
                                 )}
-                            </Slide>
+                            </Slideshow>
                             }
                         </div>
                         <div className="adInf">

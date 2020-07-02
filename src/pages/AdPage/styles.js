@@ -16,37 +16,30 @@ export const PageArea = styled.div`
         box-shadow: 0 0 9px -3px #54575a4d;
         margin-bottom: 20px;
         overflow: hidden;
+        flex-direction: column;
     }
     
     .box-p {
-        padding: 10px;
+        padding: 20px;
     }
     
     .leftSide {
         flex: 1;
-        margin-right: 20px;
+        margin-right: 20px;        
         
         .box {
             display: flex;
+            padding: 20px;
         }
         
         .adImage {
-            width: 320px;
-            height: 320px;
-            margin-right: 20px;
-            
-            .each-slide img {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-size: cover;
-                height: 320px;
-            }
+            width: 740px;
+            height: 500px;
         }
         
         .adInf {
             flex: 1;
-            padding: 20px 20px 20px 0;
+            padding: 20px 0;
                            
             .adName {
                 margin-bottom: 20px;
@@ -72,7 +65,7 @@ export const PageArea = styled.div`
     }
     
     .rightSide {
-        width: 250px;
+        width: 400px;
         
         .price span {
             color: var(--green);
@@ -84,13 +77,16 @@ export const PageArea = styled.div`
         .contactSellerLink {
             background-color: var(--blue);
             color: var(--white);
-            padding: 12px 10px;
+            padding: 15px 20px;
             border-radius: 5px;
             box-shadow: 0 0 9px -3px #54575a4d;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
         }
         
         .createdBy small {
@@ -105,11 +101,37 @@ export const PageArea = styled.div`
             display: block;
         }
     }
+    
+    @media screen and (max-width:940px) {
+        flex-direction: column;
+        
+        .leftSide {
+            .box {
+                flex-direction: column;
+            }
+        }
+        
+        /*.rightSide {
+        
+        }*/
+    }
 `;
 
 export const OthersArea = styled.div`
     h2 {
-        font-size: 20px;
+        font-size: 23px;
+        font-weight: 600;
+        margin: 30px 10px 10px 10px;
+        width: fit-content;
+        
+        &:after {
+            content: '';
+            display: block;
+            height: 4px;
+            background: var(--blue);
+            border-radius: 10px;
+            width: 60%;
+        }
     }
     
     .list {
@@ -117,7 +139,8 @@ export const OthersArea = styled.div`
         flex-wrap: wrap;
         
         .aditem {
-            width: 25%;
+            flex: 25%;
+            min-width: 250px;
         }
     }
 `;

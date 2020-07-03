@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../../assets/logo.svg";
-import {HeaderArea} from "./styles";
+import {HeaderArea, Toggle} from "./styles";
 import {Link} from "react-router-dom";
 import {isLogged, doLogout} from "../../../helpers/AuthHandler";
 
@@ -10,6 +10,11 @@ const Header = () => {
     const handleLogout = () => {
         doLogout();
         window.location.href = '/';
+    };
+
+    const showMenu = () => {
+        document.querySelector('nav ul').classList.toggle('show');
+        document.querySelector('.container').classList.toggle('column');
     };
 
     return (
@@ -22,6 +27,7 @@ const Header = () => {
                 </div>
 
                 <nav>
+                    <button onClick={showMenu}><Toggle/></button>
                     <ul>
                         {logged &&
                         <>

@@ -16,11 +16,16 @@ export const SearchArea = styled.div`
             
             input, select {
                 height: 40px;
-                border: 0;
                 border-radius: 5px;
                 font-size: 15px;
                 color: var(--black);
                 margin-right: 20px;
+                border: 2px solid var(--lightGray);
+                
+                &:focus {
+                        border-color: var(--gray);
+                        color: var(--gray);
+                }
             }
             
             input {
@@ -141,6 +146,7 @@ export const PageArea = styled.div`
             background: var(--blue);
             border-radius: 10px;
             width: 60%;
+            margin-top: 4px;
         }
     }
     
@@ -150,8 +156,7 @@ export const PageArea = styled.div`
         
         .aditem {
             width: 25%;
-            min-width: 250px;
-            flex: auto;
+            min-width: 240px;
         }
     }
     
@@ -167,6 +172,24 @@ export const PageArea = styled.div`
         
         &:hover {
             background-color: var(--lightBlue);
+        }
+    }
+    
+    @media screen and (max-width: 1002px) {
+        .list .aditem {
+            width: 33%;
+        }
+    }
+    
+    @media screen and (max-width: 760px) {
+        .list .aditem {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 522px) {
+        .list .aditem {
+            width: 100%;
         }
     }
 `;

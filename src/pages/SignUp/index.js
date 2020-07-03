@@ -74,7 +74,7 @@ const SignIn = () => {
                             <select value={stateLoc}
                                     onChange={e => setStateLoc(e.target.value)}
                                     required>
-                                <option>Selecionar</option>
+                                <option/>
                                 {stateList.map((i, k) =>
                                     <option key={k}
                                             value={i._id}>{i.name}</option>
@@ -116,7 +116,6 @@ const SignIn = () => {
                         </div>
                     </label>
                     <div className="area">
-                        <div className="area-title"/>
                         <div className="area-input">
                             <button disabled={disabled}>Fazer Cadastro</button>
                         </div>

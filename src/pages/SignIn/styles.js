@@ -1,24 +1,38 @@
 import styled from "styled-components";
+import Image from "../../assets/mosaic.jpg";
+import {LockPassword} from "styled-icons/remix-fill";
+import {Email} from "styled-icons/material";
 
 export const PageArea = styled.div`
-    form {
+    background: url(${Image});
+    background-size: cover;
+    padding: 100px 10px;
+    box-shadow: 0 0 3px #999;
+    border-radius: 5px;
+
+    form {       
+        margin: auto; 
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
         background-color: var(--white);
-        border-radius: 3px;
-        padding: 10px;
+        padding: 20px 30px;
         box-shadow: 0 0 3px #999;
+        border-radius: 5px;
     
         .area {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             padding: 10px;
-            max-width: 500px;
+            max-width: 400px;
             
             .area-title {
-                width: 200px;
-                text-align: right;
-                padding-right: 20px;
+                text-align: left;
                 font-weight: 700;
                 font-size: 14px;
+                margin-bottom: 10px;
+                display: flex;
             }
             
             .area-input {
@@ -31,10 +45,10 @@ export const PageArea = styled.div`
                 }
                 
                 input {
-                    width: 100%;
+                    width: 300px;
                     font-size: 14px;
                     padding: 5px;
-                    border: 1px solid #ddd;
+                    border: 2px solid var(--dGray);
                     border-radius: 3px;
                     transition: border-color .4s ease;
                     
@@ -44,13 +58,13 @@ export const PageArea = styled.div`
                     }
                     
                     &:focus {
-                        border-color: var(--black);
-                        color: var(--black);
+                        border-color: var(--gray);
+                        color: var(--gray);
                     }
                 }
                 
                 button {
-                    background-color: var(--black);
+                    background-color: var(--blue);
                     padding: 5px 10px;
                     border-radius: 4px;
                     color: var(--white);
@@ -64,4 +78,32 @@ export const PageArea = styled.div`
             }  
         }
     }
+    
+    @media screen and (max-width: 548px) {
+        form {
+            padding: 10px;
+        }
+    
+        form .area-input input {
+            width: 100%!important;
+        }
+        
+        form .area-input:nth-child(1) {
+            white-space: nowrap
+        }
+    }
+`;
+
+export const Password = styled(LockPassword)`
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: var(--blue);
+`;
+
+export const User = styled(Email)`
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: var(--blue);
 `;

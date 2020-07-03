@@ -9,6 +9,7 @@ export const FooterArea = styled.footer`
     justify-content: center;
     font-size: 14px;
     margin-top: 30px;
+    padding: 20px;
     
     p {
         color: var(--gray);

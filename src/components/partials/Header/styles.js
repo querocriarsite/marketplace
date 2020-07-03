@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import {Menu} from "styled-icons/heroicons-outline";
 
 export const HeaderArea = styled.div`
     background-color: var(--white);
     height: 60px;
     box-shadow: 0 0 5px #00000070;
-    position: sticky;
     width: 100%;
     z-index: 1;
     top: 0;
@@ -14,7 +14,7 @@ export const HeaderArea = styled.div`
         height: 100%;
         display: flex;
         margin: auto;
-        padding: 0 20px;
+        padding: 0 20px;        
     }
     
     .logo {
@@ -26,6 +26,10 @@ export const HeaderArea = styled.div`
     nav {
         display: flex;
         padding: 10px 0;
+        
+        button {
+            display: none;
+        }
     
         ul {
             display: flex;
@@ -66,27 +70,49 @@ export const HeaderArea = styled.div`
         height: auto;
         
         .logo {
-            padding: 10px 0;
+            padding: 10px 0 5px 0;
+            width: 100%;
         }
     
         .container {
-            flex-direction: column;
             align-items: center;
         }
         
-        nav ul {
-            flex-direction: column;
-            height: auto;
-            margin-bottom: 10px;
+        .container.column {
+            flex-direction: column!important;
         }
         
-        nav li {
-            margin: 10px;
-        }
-       
-        nav li:nth-child(3) {
-            margin-top: 20px;
+        nav {
+            button {
+                display: flex;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            
+            ul {
+                flex-direction: column;
+                height: auto;
+                margin-bottom: 10px;
+                display: none;                
+            }
+            
+            ul.show {
+                display: flex!important;
+            }
+            
+            li {
+                margin: 10px;
+            }
+           
+            li:nth-child(3) {
+                margin-top: 20px;
+            }
         }
     }
 `;
 
+export const Toggle = styled(Menu)`
+    width: 30px;
+    height: 30px;
+`;

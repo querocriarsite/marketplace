@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {PageArea} from "./styles";
+import {PageArea, Password, User} from "./styles";
 import {PageContainer, PageTitle, ErrorMessage} from "../../Styles";
 import useApi from "../../helpers/MarketplaceAPI";
 import {doLogin} from "../../helpers/AuthHandler";
@@ -41,7 +41,7 @@ const SignIn = () => {
 
                 <form onSubmit={handleSubmit}>
                     <label className="area">
-                        <div className="area-title">E-mail</div>
+                        <div className="area-title"><User/> E-mail</div>
                         <div className="area-input">
                             <input type="email"
                                    disabled={disabled}
@@ -52,7 +52,7 @@ const SignIn = () => {
                         </div>
                     </label>
                     <label className="area">
-                        <div className="area-title">Senha</div>
+                        <div className="area-title"><Password/> Senha</div>
                         <div className="area-input">
                             <input type="password"
                                    disabled={disabled}
@@ -63,7 +63,6 @@ const SignIn = () => {
                         </div>
                     </label>
                     <div className="area">
-                        <div className="area-title"/>
                         <label className="area-input remember">
                             <input type="checkbox"
                                    disabled={disabled}
@@ -74,7 +73,6 @@ const SignIn = () => {
                         </label>
                     </div>
                     <div className="area">
-                        <div className="area-title"/>
                         <div className="area-input">
                             <button disabled={disabled}>Fazer Login</button>
                         </div>

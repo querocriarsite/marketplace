@@ -35,6 +35,7 @@ export const PageArea = styled.div`
     }
     
     .leftSide {
+        width: 70%;
         flex: 1;
         margin-right: 20px;        
         
@@ -46,6 +47,7 @@ export const PageArea = styled.div`
         .adImage {
             width: 740px;
             height: 500px;
+            max-width: 100%;
             
             .alice-carousel__dots {
                 margin-top: -25px;
@@ -87,13 +89,15 @@ export const PageArea = styled.div`
     }
     
     .rightSide {
-        width: 400px;
+        flex: 1;
+        width: 30%;
         
         .price span {
             color: var(--green);
             display: block;
             font-size: 27px;
             font-weight: 600;
+            text-align: center;
         }
         
         .contactSellerLink {
@@ -108,13 +112,15 @@ export const PageArea = styled.div`
             margin-bottom: 20px;
             font-weight: 600;
             font-size: 18px;
+            text-align: center;
             text-transform: uppercase;
         }
         
         .createdBy small {
-            display: block;
+            display: flex;
             color: var(--dGray);
             margin-top: 10px;
+            word-break: break-word;
         }
         
         .createdBy strong {
@@ -124,18 +130,21 @@ export const PageArea = styled.div`
         }
     }
     
-    @media screen and (max-width:940px) {
+    @media screen and (max-width:800px) {
         flex-direction: column;
         
         .leftSide {
-            .box {
-                flex-direction: column;
+            margin-right: 0;
+            width: 100%;
+            
+            .alice-carousel__stage-item {
+                width: 100%;
             }
         }
         
-        /*.rightSide {
-        
-        }*/
+        .rightSide {
+            width: 100%;
+        }
     }
 `;
 
@@ -153,6 +162,7 @@ export const OthersArea = styled.div`
             background: var(--blue);
             border-radius: 10px;
             width: 60%;
+            margin-top: 4px;
         }
     }
     
@@ -161,8 +171,26 @@ export const OthersArea = styled.div`
         flex-wrap: wrap;
         
         .aditem {
-            flex: 25%;
-            min-width: 250px;
+            width: 25%;
+            min-width: 240px;
+        }
+    }
+    
+    @media screen and (max-width: 1002px) {
+        .list .aditem {
+            width: 33%;
+        }
+    }
+    
+    @media screen and (max-width: 760px) {
+        .list .aditem {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 522px) {
+        .list .aditem {
+            width: 100%;
         }
     }
 `;

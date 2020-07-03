@@ -7,11 +7,24 @@ export const Template = styled.div`
 export const PageContainer = styled.div`
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 `;
 
 export const PageTitle = styled.h1`
-    font-size: 27px;
+    font-size: 23px;
+        font-weight: 600;
+        margin: 30px 10px 10px 10px;
+        width: fit-content;
+        
+        &:after {
+            content: '';
+            display: block;
+            height: 4px;
+            background: var(--blue);
+            border-radius: 10px;
+            width: 60%;
+            margin-top: 4px;
+        }
 `;
 
 export const PageBody = styled.div`

@@ -23,7 +23,7 @@ export const PageArea = styled.div`
             padding: 10px;
             
             &:focus {
-                border: 2px solid var(--black);
+                border: 2px solid var(--gray);
             }
             
             &::placeholder {
@@ -34,10 +34,10 @@ export const PageArea = styled.div`
         .categoryItem {
             display: flex;
             align-items: center;
-            padding: 10px;
+            padding: 10px 0 10px 5px;
             border-radius: 5px;
             color: var(--black);
-            cursor: pointer;           
+            cursor: pointer;          
             
             img {
                 width: 25px;
@@ -69,8 +69,20 @@ export const PageArea = styled.div`
         flex: 1;
         
         h2 {
-            font-size: 18px;
-            margin: 0 10px 10px 10px;
+            font-size: 23px;
+            font-weight: 600;
+            margin: 30px 10px 10px 10px;
+            width: fit-content;
+            
+            &:after {
+                content: '';
+                display: block;
+                height: 4px;
+                background: var(--blue);
+                border-radius: 10px;
+                width: 60%;
+                margin-top: 4px;
+            }
         }
         
         .listWarning {
@@ -84,11 +96,13 @@ export const PageArea = styled.div`
             
             .aditem {
                 width: 33%;
+                min-width: 240px;
             }
         }
         
         .pagination {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             margin: 20px 0;
@@ -102,7 +116,7 @@ export const PageArea = styled.div`
                 background-color: var(--blue);
                 color: var(--white);
                 font-size: 13px;
-                margin-right: 5px;
+                margin: 0 2px 5px 2px;
                 border-radius: 4px;
                 transition: background-color .2s, transform .2s;
                 
@@ -118,5 +132,38 @@ export const PageArea = styled.div`
                 }
             }
         }
+    }
+    
+    @media screen and (max-width: 1020px) {        
+        .rightSide {
+            .list .aditem {
+                width: 50%;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 781px) {        
+        .rightSide {
+            .list .aditem {
+                width: 100%;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 548px) {        
+        flex-direction: column;
+        
+        .leftSide {
+            width: 100%;
+            
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                
+                li {
+                    width: 50%;
+                }
+            }
+        }       
     }
 `;

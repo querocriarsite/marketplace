@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Item = styled.div`
     a {
         display: block;
-        //border: 1px solid var(--gray);
         border-radius: 5px;
         margin: 10px;
         padding: 10px;
@@ -26,6 +25,7 @@ export const Item = styled.div`
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
         

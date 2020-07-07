@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Menu} from "styled-icons/heroicons-outline";
 
 export const HeaderArea = styled.div`
+    position: sticky;
     background-color: var(--white);
     height: 60px;
     box-shadow: 0 0 5px #00000070;
@@ -73,6 +74,10 @@ export const HeaderArea = styled.div`
             padding: 10px 0 5px 0;
             width: 100%;
         }
+        
+        .logo.border {
+            border-bottom: 1px solid #cecece;
+        }
     
         .container {
             align-items: center;
@@ -94,11 +99,21 @@ export const HeaderArea = styled.div`
                 flex-direction: column;
                 height: auto;
                 margin-bottom: 10px;
-                display: none;                
+                display: none;
             }
             
             ul.show {
                 display: flex!important;
+                animation: downMenu .5s;
+            }
+            
+            @keyframes downMenu {
+                from {
+                    transform: translateY(-20px);
+                }
+                to {
+                    transform: translateY(0px);
+                }
             }
             
             li {

@@ -93,7 +93,7 @@ const Ads = () => {
             setStateList(slist);
         }
         getStates();
-    }, []);
+    }, [api]);
 
     useEffect(() => {
         const getCategories = async () => {
@@ -101,7 +101,7 @@ const Ads = () => {
             setCategories(ctgs);
         }
         getCategories();
-    }, []);
+    }, [api]);
 
     const pagination = [];
     for (let i = 1; i < pageCount; i++) {

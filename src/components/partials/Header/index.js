@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Logo from "../../../assets/logo.svg";
 import {HeaderArea, Toggle} from "./styles";
 import {Link} from "react-router-dom";
@@ -12,23 +12,21 @@ const Header = () => {
         window.location.href = '/';
     };
 
-    const showMenu = () => {
-        document.querySelector('nav ul').classList.toggle('show');
-        document.querySelector('.container').classList.toggle('column');
-    };
+    const [showMenu, setShowMenu] = useState(false);
+    const handleMenu = () => setShowMenu(!showMenu);
 
     return (
         <HeaderArea>
-            <div className="container">
-                <div className="logo">
+            <div className={showMenu?'container column':'container'}>
+                <div className={showMenu?'logo border':'logo'}>
                     <Link to="/">
                         <img src={Logo} alt="Marktplace"/>
                     </Link>
                 </div>
 
                 <nav>
-                    <button onClick={showMenu}><Toggle/></button>
-                    <ul>
+                    <button onClick={handleMenu}><Toggle/></button>
+                    <ul className={showMenu?'show':undefined}>
                         {logged &&
                         <>
                             <li>

@@ -27,7 +27,7 @@ const SignIn = () => {
             setCategories(cats);
         };
         getCategories();
-    }, []);
+    }, [api]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();

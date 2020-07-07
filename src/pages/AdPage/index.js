@@ -29,7 +29,7 @@ const AdPage = () => {
             setLoading(false);
         };
         getAdInfo(id);
-    }, []);
+    }, [api, id]);
 
     const formatDate = (date) => {
         const cDate = new Date(date);

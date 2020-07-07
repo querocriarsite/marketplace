@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {KeyboardArrowRight, Home} from "styled-icons/material";
+import {KeyboardArrowRight, KeyboardArrowLeft, Home} from "styled-icons/material";
 
 export const Fake = styled.div`
     background-color: var(--lightGray);
@@ -34,6 +34,28 @@ export const PageArea = styled.div`
         padding: 20px;
     }
     
+    .slideThumb{
+        cursor:grab;
+    }
+    .thumb{
+        width:100px;
+        height:100px;
+        cursor:pointer;
+        padding:0px 8px;
+    }
+    .thumb-footer{
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+    }
+    .buttons-nav{
+        width:740px;
+        display:flex;
+        justify-content:space-around;
+        position:absolute;
+        top:80%;
+    }
+    
     .leftSide {
         width: 70%;
         flex: 1;
@@ -57,6 +79,11 @@ export const PageArea = styled.div`
             
             .alice-carousel__stage-item {
                 text-align: center;
+            }
+            
+            .thumb{
+                width:10px;
+                height:10px;
             }
         }
         
@@ -196,6 +223,12 @@ export const OthersArea = styled.div`
 `;
 
 export const RightArrow = styled(KeyboardArrowRight)`
+    width: 16px;
+    height: 16px;
+    fill: var(--blue);
+`;
+
+export const LeftArrow = styled(KeyboardArrowLeft)`
     width: 16px;
     height: 16px;
     fill: var(--blue);

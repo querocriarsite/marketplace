@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useCallback} from "react";
 import {useLocation, useHistory} from "react-router-dom";
 import {PageArea} from "./styles";
 import useApi from "../../helpers/MarketplaceAPI";
@@ -30,7 +30,7 @@ const Ads = () => {
     const [resultOpacity, setResultOpacity] = useState(1);
     const [loading, setLoading] = useState(true);
 
-    const getAdsList = async () => {
+    const getAdsList = useCallback(async () => {
         setLoading(true);
         let offset = (currentPage - 1) * 12;
 
@@ -46,7 +46,7 @@ const Ads = () => {
         setAdsTotal(json.total);
         setResultOpacity(1);
         setLoading(false);
-    };
+    }, [api, cat, currentPage, q, state]);
 
     useEffect(() => {
         if (adList.length > 0) {
@@ -54,12 +54,12 @@ const Ads = () => {
         } else {
             setPageCount(0);
         }
-    }, [adsTotal]);
+    }, [adList.length, adsTotal]);
 
     useEffect(() => {
-        setResultOpacity(0.3);
-        getAdsList();
-    }, [currentPage]);
+            setResultOpacity(0.3);
+            getAdsList();
+    }, [getAdsList, currentPage]);
 
     useEffect(() => {
         const queryString = [];
@@ -85,7 +85,7 @@ const Ads = () => {
 
         setResultOpacity(0.3);
         setCurrentPage(1);
-    }, [q, cat, state]);
+    }, [getAdsList, history, q, cat, state]);
 
     useEffect(() => {
         const getStates = async () => {

@@ -123,8 +123,8 @@ const AdPage = () => {
                     {adInfo.userInfo &&
                     <>
                         <a href={`mailto:${adInfo.userInfo.email}`}
-                           className="contactSellerLink"
-                           target="_BLANK">Fale com o vendedor</a>
+                           className="contactSellerLink">
+                            Fale com o vendedor</a>
                         <div className="createdBy box box-p">
                             <strong>{adInfo.userInfo.name}</strong>
                             <small>E-mail: {adInfo.userInfo.email}</small>

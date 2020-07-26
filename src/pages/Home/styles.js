@@ -1,12 +1,12 @@
 import styled from "styled-components";
+import Image from "../../assets/mosaicDark.jpg";
 
 export const SearchArea = styled.div`
-    background-color: var(--lightBlue);
+    background: url(${Image}) center;
     padding: 20px 0;
     
     .searchBox {
         display: flex;
-        background-color: var(--lightBlue);
         padding: 20px 5px 10px 5px;
         border-radius: 5px;
         
@@ -23,7 +23,7 @@ export const SearchArea = styled.div`
                 border: 2px solid var(--lightGray);
                 
                 &:focus {
-                        border-color: var(--gray);
+                        box-shadow: 0 0 7px rgba(255,255,255,0.6);
                         color: var(--gray);
                 }
             }
@@ -38,7 +38,7 @@ export const SearchArea = styled.div`
             }
             
             button {
-                background-color: var(--black);
+                background-color: var(--lightBlue);
                 font-size: 15px;
                 border-radius: 5px;
                 color: var(--white);
@@ -46,7 +46,8 @@ export const SearchArea = styled.div`
                 transition: background-color .3s;
                 
                 &:hover {
-                    background-color: var(--gray);
+                    //background-color: var(--blue);
+                    box-shadow: 0 0 7px rgba(255,255,255,0.6);
                 }
             }
         }
@@ -73,7 +74,7 @@ export const SearchArea = styled.div`
                 transition: color .2s;
                 
                 &:hover {
-                    color: var(--black);
+                    text-shadow: 0 0 7px rgba(255,255,255,0.6);
                 }
             }  
             
@@ -86,7 +87,7 @@ export const SearchArea = styled.div`
                 transition: border .2s, transform .3s;
                 
                 &:hover {
-                    border-color: var(--black);
+                    border: 1px solid var(--white);
                     transform: scale(1.1);
                 }
             }

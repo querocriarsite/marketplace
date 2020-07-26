@@ -4,7 +4,7 @@ import {LockPassword} from "styled-icons/remix-fill";
 import {Email} from "styled-icons/material";
 
 export const PageArea = styled.div`
-    background: url(${Image});
+    background: url(${Image}) center;
     background-size: cover;
     padding: 100px 10px;
     box-shadow: 0 0 3px #999;

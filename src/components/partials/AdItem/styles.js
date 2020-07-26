@@ -30,7 +30,16 @@ export const Item = styled.div`
         }
         
         .itemName {
+            margin: 5px 0;
+            font-weight: 500;
+            border-bottom: 1px solid var(--bgColor);
+            padding-bottom: 3px;
+        }
+        
+        .itemPrice {
+            color: var(--green);
             font-weight: 600;
+            font-size: 20px;
         }
         
     }

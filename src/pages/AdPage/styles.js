@@ -38,22 +38,29 @@ export const PageArea = styled.div`
         cursor:grab;
     }
     .thumb{
-        width:100px;
-        height:100px;
+        width:90px;
+        height:90px;
         cursor:pointer;
-        padding:0px 8px;
+        padding:10px;
     }
     .thumb-footer{
         display:flex;
         justify-content:center;
-        margin-top:10px;
+        margin:10px 30px 0 30px;
+        z-index: 1;
+        
+        nav {
+            overflow: hidden;
+            flex-direction: row;
+            display: flex;
+        }
     }
     .buttons-nav{
-        width:740px;
+        width:100%;
         display:flex;
-        justify-content:space-around;
-        position:absolute;
-        top:80%;
+        justify-content:space-between;
+        position:relative;
+        margin-top: 30px;
     }
     
     .leftSide {
@@ -79,11 +86,6 @@ export const PageArea = styled.div`
             
             .alice-carousel__stage-item {
                 text-align: center;
-            }
-            
-            .thumb{
-                width:10px;
-                height:10px;
             }
         }
         

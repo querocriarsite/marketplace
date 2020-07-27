@@ -14,32 +14,32 @@ export default () => {
     return (
         <Switch>
 
-            <RouteHandler exact path="/">
+            <RouteHandler exact path="/projetos/marketplace/">
                 <Home/>
             </RouteHandler>
 
-            <RouteHandler exact path="/about">
+            <RouteHandler exact path="/projetos/marketplace/about">
                 <About/>
             </RouteHandler>
 
 
-            <RouteHandler exact path="/signin">
+            <RouteHandler exact path="/projetos/marketplace/signin">
                 <SignIn/>
             </RouteHandler>
 
-            <RouteHandler exact path="/signup">
+            <RouteHandler exact path="/projetos/marketplace/signup">
                 <SignUp/>
             </RouteHandler>
 
-            <RouteHandler path="/ad/:id">
+            <RouteHandler path="/projetos/marketplace/ad/:id">
                 <AdPage/>
             </RouteHandler>
 
-            <RouteHandler private path="/post-an-ad">
+            <RouteHandler private path="/projetos/marketplace/post-an-ad">
                 <AddAd/>
             </RouteHandler>
 
-            <RouteHandler path="/ads">
+            <RouteHandler path="/projetos/marketplace/ads">
                 <Ads/>
             </RouteHandler>
 

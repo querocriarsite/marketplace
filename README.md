@@ -15,7 +15,7 @@ https://youtu.be/DJAxkwqwv_Q
 
 ⚛ React js
 
-🔥 Redux
+🔥 Integração com API
 
 💅 Styled-Components
 

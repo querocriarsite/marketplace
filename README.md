@@ -9,7 +9,7 @@
 Este projeto tem como objetivo principal estudar React e suas tecnologias no desenvolvimento de um Marketplace estilo OLX integrado com uma api.
 
 <b>- Link para vídeo de demonstração:</b> <br>
-https://youtu.be/jso5RuIlDN4
+https://youtu.be/DJAxkwqwv_Q
 
 ## Tecnologias Usadas:
 

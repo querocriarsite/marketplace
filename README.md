@@ -4,19 +4,18 @@
 
 ## Apresentação
 
+![Imagem do projeto](https://raw.githubusercontent.com/querocriarsite/marketplace/master/MARKETPLACE.jpg)
+
 Este projeto tem como objetivo principal estudar React e suas tecnologias no desenvolvimento de um Marketplace estilo OLX integrado com uma api.
 
 <b>- Link para vídeo de demonstração:</b> <br>
 https://youtu.be/jso5RuIlDN4
 
-<b>- Link para visualização:</b> <br>
-https://querocriarsite.com/projetos/discord/
-
 ## Tecnologias Usadas:
 
 ⚛ React js
 
-🔥 TypeScript
+🔥 Redux
 
 💅 Styled-Components
 
@@ -24,13 +23,13 @@ https://querocriarsite.com/projetos/discord/
 
 ## Features
 
-- [x] Front-end clone do site Discord (https://discord.com/).
+- [x] Front-end de um marketplace.
 
-- [x] Projeto responsivo apenas para pc e tablets.
+- [x] Projeto responsivo.
 
-- [x] Desenvolvido no formato SPA.
+- [x] Integrado com api.
 
-- [x] Utilizado css grid layout e Typescript.
+- [x] Utilizado flexbox.
 
 ## Instruções
 
@@ -55,10 +54,6 @@ yarn start
 ```
 yarn build
 ```
-
-## Imagem do Projeto
-
-![Imagem do projeto](https://raw.githubusercontent.com/querocriarsite/clone-discord/master/screenshots/screenshot.png)
 
 ## Autoria
 

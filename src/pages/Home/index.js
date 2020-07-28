@@ -44,7 +44,7 @@ const Home = () => {
             <SearchArea>
                 <PageContainer>
                     <div className="searchBox">
-                        <form method="GET" action="/projetos/marketplace/ads">
+                        <form method="GET" action="/ads">
                             <input
                                 type="text"
                                 name="q"
@@ -63,7 +63,7 @@ const Home = () => {
 
                     <div className="categoryList">
                         {categories.map((i, k) =>
-                            <Link key={k} to={`/projetos/marketplace/ads?cat=${i.slug}`}
+                            <Link key={k} to={`/ads?cat=${i.slug}`}
                                   className="categoryItem">
                                 <img src={i.img} alt="Categoria"/>
                                 <span>{i.name}</span>
@@ -81,7 +81,7 @@ const Home = () => {
                             <AdItem key={k} data={i}/>
                         )}
                     </div>
-                    <Link className="seeAllLink" to="/projetos/marketplace/ads">Ver Todos</Link>
+                    <Link className="seeAllLink" to="/ads">Ver Todos</Link>
 
                 </PageArea>
             </PageContainer>

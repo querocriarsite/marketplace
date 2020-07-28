@@ -1,66 +1,67 @@
-## Available Scripts
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/marketplace?style=plastic)</a>
 
-In the project directory, you can run:
+# PROJETO MARKETPLACE (com React js)
 
-### `yarn start`
+## Apresentação
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este projeto tem como objetivo principal estudar React e suas tecnologias no desenvolvimento de um Marketplace estilo OLX integrado com uma api.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<b>- Link para vídeo de demonstração:</b> <br>
+https://youtu.be/jso5RuIlDN4
 
-### `yarn test`
+<b>- Link para visualização:</b> <br>
+https://querocriarsite.com/projetos/discord/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Usadas:
 
-### `yarn build`
+⚛ React js
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔥 TypeScript
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+💅 Styled-Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ Lint — ESlint/Prettier/Editor Config
 
-### `yarn eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [x] Front-end clone do site Discord (https://discord.com/).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [x] Projeto responsivo apenas para pc e tablets.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [x] Desenvolvido no formato SPA.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [x] Utilizado css grid layout e Typescript.
 
-## Learn More
+## Instruções
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Todos comandos devem ser executados na pasta do projeto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Instalar dependências:
 
-### Code Splitting
+```
+yarn
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Iniciar servidor e executar o aplicativo no modo de desenvolvimento.
+- Abrir http://localhost:3000 para visualização no navegador.
+- Uma página será recarregada se você fizer edições.:
 
-### Analyzing the Bundle Size
+```
+yarn start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Criar build de produção otimizada:
 
-### Making a Progressive Web App
+```
+yarn build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Imagem do Projeto
 
-### Advanced Configuration
+![Imagem do projeto](https://raw.githubusercontent.com/querocriarsite/clone-discord/master/screenshots/screenshot.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Autoria
 
-### Deployment
+Éverton Toffanetto
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+https://querocriarsite.com

@@ -1,6 +1,8 @@
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/querocriarsite/marketplace?style=plastic)</a>
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/marketplace?style=plastic)</a> 
+![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/marketplace?style=plastic) 
+![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/marketplace?color=yellow&style=plastic)
 
-# PROJETO MARKETPLACE (com React js)
+<h1 align="center">PROJETO MARKETPLACE</h1>
 
 ## Apresentação
 
